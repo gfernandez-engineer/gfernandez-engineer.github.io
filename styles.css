@@ -162,7 +162,7 @@ p.plot-title {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-height: 35px;
+
 }
 
 .intelljidea {
@@ -170,7 +170,8 @@ p.plot-title {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-height: 35px;
+    height: 35px;
+    /*background-height: 35px;*/
 }
 .soon {
     text-align: center;
