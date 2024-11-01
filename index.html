@@ -1,1 +1,93 @@
-Hello Wordl
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de GitHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Giancarlo Fernández Inga</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#technologies">Tecnologías</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Breve descripción sobre ti y tus intereses.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <p>Descripción de proyectos relevantes.</p>
+    </section>
+
+    <section id="technologies">
+        <h2>Tecnologías</h2>
+        <h3>Lenguajes Usados en la Última Semana</h3>
+        <canvas id="languagesChart"></canvas>
+        <script>
+            const data = {
+                labels: ["JavaScript", "Java", "SQL", "Python", "C#"],
+                datasets: [{
+                    label: "Lenguajes Usados",
+                    data: [40, 25, 15, 10, 10],
+                    backgroundColor: ["#ff6384", "#36a2eb", "#ffce56", "#4bc0c0", "#9966ff"]
+                }]
+            };
+            const config = {
+                type: 'doughnut',
+                data: data,
+                options: { responsive: true }
+            };
+            new Chart(document.getElementById('languagesChart'), config);
+        </script>
+    </section>
+
+    <footer id="contact">
+        <h2>Contacto</h2>
+        <p>Tu información de contacto.</p>
+    </footer>
+
+    <style>
+        /* Agrega estilos CSS aquí */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ddd;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+    </style>
+</body>
+</html>
