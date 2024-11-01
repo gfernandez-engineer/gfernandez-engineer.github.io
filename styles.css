@@ -159,7 +159,7 @@ p.plot-title {
 
 .java {
     background-image: url("../images/java.png");
-    background-size: cover;
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -167,11 +167,12 @@ p.plot-title {
 
 .intelljidea {
     background-image: url("https://opensource.muenchen.de/logo/480px-IntelliJ_IDEA_Icon.svg.png");
-    background-size: cover;
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 70%;
-    width: 70%;
+
+
+
     /*background-height: 35px;*/
 }
 .soon {
