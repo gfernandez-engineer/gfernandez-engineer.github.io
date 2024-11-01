@@ -4,89 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giancarlo Fernández Inga</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            background-color: #f0f2f5;
+            color: #333;
         }
         header {
             background-color: #4CAF50;
             color: white;
             padding: 20px;
             text-align: center;
-            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             max-width: 1200px;
-            margin: 20px;
+            margin: 20px auto;
         }
-        .column {
+        .card {
             flex: 1;
             min-width: 300px;
-            margin: 10px;
+            margin: 15px;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        h2 {
-            color: #4CAF50;
-        }
-        canvas {
-            margin: 20px 0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Giancarlo Fernández Inga</h1>
-    </header>
-
-    <div class="container">
-        <div class="column" id="about">
-            <h2>Sobre mí</h2>
-            <p>Breve descripción sobre ti y tus intereses. Puedes incluir tu experiencia profesional, tus pasiones y tu enfoque en la tecnología.</p>
-        </div>
-
-        <div class="column" id="projects">
-            <h2>Proyectos</h2>
-            <p>Descripción de proyectos relevantes que has completado. Incluye enlaces a repositorios de GitHub o demostraciones en vivo.</p>
-        </div>
-
-        <div class="column" id="technologies">
-            <h2>Tecnologías</h2>
-            <h3>Lenguajes Usados en la Última Semana</h3>
-            <canvas id="languagesChart"></canvas>
-            <script>
-                const data = {
-                    labels: ["JavaScript", "Java", "SQL", "Python", "C#"],
-                    datasets: [{
-                        label: "Lenguajes Usados",
-                        data: [40, 25, 15, 10, 10],
-                        backgroundColor: ["#ff6384", "#36a2eb", "#ffce56", "#4bc0c0", "#9966ff"]
-                    }]
-                };
-                const config = {
-                    type: 'doughnut',
-                    data: data,
-                    options: { responsive: true }
-                };
-                new Chart(document.getElementById('languagesChart'), config);
-            </script>
-        </div>
-    </div>
-
-    <footer>
-        <h2>Contacto</h2>
-        <p>Tu información de contacto: [tu correo electrónico o redes sociales]</p>
-    </footer>
-</body>
-</html>
+            background-color: #ffffff;
+       
