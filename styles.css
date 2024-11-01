@@ -157,13 +157,19 @@ p.plot-title {
     background-position: center;
 }
 
-.stve {
-    background-image: url("https://www.stvetelebasica.com/web/image/1976/shutterstock_288236681.jpg?access_token=6666cc52-c8ba-477c-874b-ce10946c7139");
+.java {
+    background-image: url("../images/java.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.intelljidea {
+    background-image: url("https://opensource.muenchen.de/logo/480px-IntelliJ_IDEA_Icon.svg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .soon {
     text-align: center;
     padding: 40px;
