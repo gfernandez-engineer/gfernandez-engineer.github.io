@@ -133,7 +133,7 @@ function draw_pie(data, ctx) {
     });
     return myPieChart;
 }
-
+//
 // function draw_working_hours(elementId) {
     // var ctx = document.getElementById(elementId);
     // $.ajax({
@@ -147,6 +147,7 @@ function draw_pie(data, ctx) {
         // }
     // });
 // };
+//
 
 function draw_working_hours(elementId) {
     var ctx = document.getElementById(elementId);
@@ -162,7 +163,7 @@ function draw_working_hours(elementId) {
     });
 };
 
-
+//
 // function draw_languages_share(elementId) {
     // var ctx = document.getElementById(elementId);
     // $.ajax({
@@ -176,6 +177,7 @@ function draw_working_hours(elementId) {
         // },
     // });
 // }
+//
 
 function draw_languages_share(elementId) {
     var ctx = document.getElementById(elementId);
