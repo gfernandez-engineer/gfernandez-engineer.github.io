@@ -170,7 +170,8 @@ p.plot-title {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 35px;
+    height: 70%px;
+    width: 70%px;
     /*background-height: 35px;*/
 }
 .soon {
