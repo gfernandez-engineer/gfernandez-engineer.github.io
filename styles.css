@@ -162,6 +162,7 @@ p.plot-title {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-height: 35px;
 }
 
 .intelljidea {
