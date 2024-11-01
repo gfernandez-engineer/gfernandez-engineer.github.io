@@ -134,11 +134,25 @@ function draw_pie(data, ctx) {
     return myPieChart;
 }
 
+// function draw_working_hours(elementId) {
+    // var ctx = document.getElementById(elementId);
+    // $.ajax({
+        // type: 'GET',
+        // url: 'https://wakatime.com/share/@joelibaceta/e4dca67d-585b-45b3-9406-6dd9d817b336.json',
+        // dataType: 'jsonp',
+        // success: function(response) {
+            // console.log(response.data);
+            // data = build_data(response.data);
+            // draw_line(data, ctx);   
+        // }
+    // });
+// };
+
 function draw_working_hours(elementId) {
     var ctx = document.getElementById(elementId);
     $.ajax({
         type: 'GET',
-        url: 'https://wakatime.com/share/@joelibaceta/e4dca67d-585b-45b3-9406-6dd9d817b336.json',
+        url: 'https://wakatime.com/share/@gianfernandez/55b9f3e6-e691-43e4-bfc8-9ba30869092d.json',
         dataType: 'jsonp',
         success: function(response) {
             console.log(response.data);
@@ -148,12 +162,26 @@ function draw_working_hours(elementId) {
     });
 };
 
+
+// function draw_languages_share(elementId) {
+    // var ctx = document.getElementById(elementId);
+    // $.ajax({
+        // type: 'GET',
+        // //url: 'https://wakatime.com/share/@joelibaceta/9cb8dc9e-ac75-475d-88a8-8a66ef80f884.json', month
+        // url: 'https://wakatime.com/share/@joelibaceta/d6c82088-6c98-4dd6-a2ee-9cf6f1bad568.json', //week
+        // dataType: 'jsonp',
+        // success: function(response) {
+            // data = prepare_data(response.data);
+            // draw_pie(data, ctx);
+        // },
+    // });
+// }
+
 function draw_languages_share(elementId) {
     var ctx = document.getElementById(elementId);
     $.ajax({
         type: 'GET',
-        //url: 'https://wakatime.com/share/@joelibaceta/9cb8dc9e-ac75-475d-88a8-8a66ef80f884.json', month
-        url: 'https://wakatime.com/share/@joelibaceta/d6c82088-6c98-4dd6-a2ee-9cf6f1bad568.json', //week
+        url: 'https://wakatime.com/share/@gianfernandez/bca3b26d-0947-408e-89c7-ff63fe070f97.json', //week
         dataType: 'jsonp',
         success: function(response) {
             data = prepare_data(response.data);
