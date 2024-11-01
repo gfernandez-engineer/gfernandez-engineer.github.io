@@ -1,0 +1,214 @@
+
+html,body{height:100%; overflow: hidden;}
+
+.container-fluid { 
+    min-height: 100%;
+    height: 100%;
+}
+
+.fill {
+    height:100%;
+}
+
+.row .fill {
+    padding: 50px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: space-between;
+}
+
+p.subtitle {
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+.right-dotted-border {
+    border-right: 1px dashed #acacac;
+    
+}
+
+p.plot-title {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height:100%;
+    align-items: left; 
+    justify-content: space-evenly;
+}
+
+.social-icon {
+    margin:4px;
+    display: block;
+    cursor: pointer;
+}
+
+.contributions {
+    margin-top: 20px;
+    display: flex-start;
+    flex-direction: column;
+}
+
+.publication {
+    padding: 10px;
+    border: 1px solid #acacac;   
+    display: flex;
+    
+}
+
+.publication.row { 
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.publication p {
+    font-size: 12px;
+    margin: 0;
+    
+}
+
+.publication img {
+    width: 80%;
+}
+
+.publication .col-4 {
+    text-align: center;
+}
+
+
+
+.my-projects {
+    margin-top: 20px;
+    display: flex-start;
+    flex-direction: column;
+    
+
+}
+
+.project-item {
+    display: block;
+    padding: 10px;
+    border: 1px solid #acacac;  
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    cursor: pointer; 
+}
+
+.project-item p {
+    font-size: 12px;
+    margin: 0;
+    
+}
+
+.projects {
+    overflow: auto;
+    height: 100%;
+    padding-bottom: 20px; 
+    margin-right: -15px;
+}
+
+.publications {
+    overflow: auto;
+    height: 100%;
+    padding-bottom: 20px; 
+    padding-top: 10px; 
+}
+
+.torrents {
+    background-image: url("../images/torrents-min.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.turing {
+    background-image: url("../images/turing-min.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bosque {
+    background-image: url("../images/51nijqs25pS-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.stve {
+    background-image: url("https://www.stvetelebasica.com/web/image/1976/shutterstock_288236681.jpg?access_token=6666cc52-c8ba-477c-874b-ce10946c7139");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.soon {
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    color: #c8c8c8;
+}
+
+.badges {
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+.badges svg {
+    margin-top: -3px;
+}
+
+.badges span {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 767px) {
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+
+    h1 {
+        margin-bottom: 50px;
+    }
+
+    .subtitle {
+        margin-bottom: 30px;
+    }
+
+    .invisible-on-mobile {
+        display: none !important;
+    }
+    
+    .graph {
+        margin-bottom: 30px;
+    }
+
+    html,body{
+        height: auto !important; 
+        overflow: auto !important;
+    }
+} 
