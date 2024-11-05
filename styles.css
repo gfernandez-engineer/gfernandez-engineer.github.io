@@ -213,6 +213,10 @@ p.plot-title {
     .invisible-on-mobile {
         display: none !important;
     }
+	.visible-on-mobile {
+        display: block;
+    }
+	
     
     .graph {
         margin-bottom: 30px;
